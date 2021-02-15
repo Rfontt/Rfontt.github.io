@@ -4,6 +4,11 @@
 body {
   background: #DCDCDC;
 }
+
+h1{
+  font-family: 'Roboto', sans-serif;
+}
+
 .container {
   max-height: 100vh;
   place-items: center;
@@ -11,27 +16,58 @@ body {
 }
 
 .description {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .description h1{
-  margin-top: 25px;
-  font-family: 'Roboto', sans-serif;
+  margin-right: -40px;
   text-align: center;
-  margin-left: 120px;
+  margin-top: 25px;
 }
 
 .description img {
   width: 100px;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .title-description {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .title-description span {
   font-family: 'Open Sans', sans-serif;
   color: #323256;
+}
+
+.title-description hr {
+  margin-top: 2rem;
+}
+
+.skills h1 {
+  margin-right: 105px;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.skills hr {
+  width: 650px;
+}
+
+.skills .listSkills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 500px;
+  margin-top: 2rem;
+  margin-left: 4rem;
+
+}
+
+.skills .listSkills section ul li {
+  list-style: none;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }
