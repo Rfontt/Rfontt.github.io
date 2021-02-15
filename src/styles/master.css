@@ -1,42 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Zilla+Slab:ital,wght@1,300&display=swap');
-
-* {
-  margin: 0;
-}
 
 .container {
   max-height: 100vh;
   place-items: center;
   display: grid;
-}
-.nav-bar {
-    background: #323256;
-    width: 100%;
-    height: 70px;
-}
-
-.nav-bar nav ul{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-bar nav ul li {
-  list-style: none;
-  margin-top: 1rem;
-}
-
-.nav-bar nav ul #projects {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.nav-bar nav ul li a{
-  font-size: clamp(1.75em, 1em + 2vw, 2.1em);
-  font-family: 'Zilla Slab', serif;
-  color: white;
 }
 
 .ImageAndName {
