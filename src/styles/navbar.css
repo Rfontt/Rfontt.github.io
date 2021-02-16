@@ -31,4 +31,5 @@
   font-size: clamp(1.75em, 0.5em + 1vw, 2.1em);
   font-family: 'Zilla Slab', serif;
   color: white;
+  cursor: pointer;
 }

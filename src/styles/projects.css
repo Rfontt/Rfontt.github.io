@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+	background: #DCDCDC;
+}
+
+.container {
+  max-height: 100vh;
+  place-items: center;
+  display: grid;
+}
+
+.listProjects h1 {
+	margin-top: 2rem;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.listProjects .projects {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); 
+	grid-gap: 2vh;
+	margin-top: 2rem;
+}
+
+.listProjects .projects main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: white;
+	width: 200px;
+	height: 100px;
+	transition: transform 200ms;
+}
+
+.listProjects .projects main:hover {
+	background: #323256;
+	color: white;
+	transform: scale(1.1);
+}
+
+.listProjects .projects main img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+
+.listProjects .projects main span {
+	font-size: 15px;
+}
+
+.listProjects .projects main a {
+	margin-top: 10px;
+	font-size: 10px;
+	cursor: pointer;
+	color: blue;
+}
+
+.listProjects .projects main a:hover {
+	font-size: 13px;
+	color: #DCDCDC;
+}

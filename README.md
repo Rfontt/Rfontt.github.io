@@ -1,4 +1,5 @@
 ### Portfolio under construction :rocket:
 
-![home](./src/images/home.png)
-![about-me](./src/images/aboutme.png)
+![Home](./imagesGithub/home.png)
+![About-me](./imagesGithub/aboutme.png)
+![Project](./imagesGithub/Projects.png)
