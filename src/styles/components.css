@@ -1,0 +1,93 @@
+body {
+	background: #1C1C30;
+}
+
+.container {
+  max-height: 100vh;
+  display: grid;
+}
+
+a i{
+	font-size: 30px;
+	color: white;
+	margin: 0.5rem;
+}
+
+.description main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: white;
+	margin-top: 4rem;
+	width: 600px;
+	margin-left: 200px;
+	border-radius: 20px;
+	height: 300px;
+}
+
+.description h1 {
+	color: #1C1C30;
+}
+
+.description span {
+	color: black;
+}
+
+.description a {
+	margin-top: 0.6rem;
+	color: blue;
+}
+
+.description i {
+	font-size: 50px;
+	color: black;
+}
+
+.arrowdown {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 13rem;
+}
+
+.arrowdown i {
+	font-size: 30px;
+	color: #DCDCDC;
+}
+
+.imageProject {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0.2rem;
+}
+
+.imageProject button {
+	margin: 0.5rem;
+	background: #1C1C30;
+	border: 0px;
+	outline: none;
+	transition: transform 400ms;
+
+}
+
+.imageProject button:hover {
+	transform: scale(1.2);
+}
+
+.imageProject button i {
+	font-size: 20px;
+	color: #1E90FF;
+}
+
+.imageProject img{
+	width: 400px;
+	height: 300px;
+	border-radius: 8px;
+	transition: transform 400ms;
+}
+
+.imageProject img:hover {
+	transform: scale(0.9);
+}
