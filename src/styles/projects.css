@@ -16,6 +16,10 @@ body {
 	text-align: center;
 }
 
+.listProjects hr {
+	margin-top: 1rem;
+}
+
 .listProjects .projects {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); 
