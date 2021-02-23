@@ -59,9 +59,29 @@
   color: #00008B;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .grid {
+    display: flex;
     width: 100%;
     flex-direction: column;
+  }
+
+  .ImageAndName img {
+    margin-top: 70px;
+  }
+
+  .ImageAndName span {
+    margin-right: 1rem;
+    font-size: clamp(1.2em, 0.2em + 0.5vw, 2em);
+  }
+
+  .ImageAndName h1 {
+    font-size: clamp(1em, 1em + 2vw, 2.1em);
+    margin-top: 40px;
+    margin-left: 1.5rem;
+  }
+
+  .social-media {
+    margin-top: 80px;
   }
 }
