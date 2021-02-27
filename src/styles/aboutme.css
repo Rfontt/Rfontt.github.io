@@ -51,23 +51,35 @@ h1{
 }
 
 .skills .listSkills {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2vh;
+  place-items: center;
+}
+
+.skills .listSkills main {
+  margin-top: 2rem;
+  width: 200px;
   background: white;
-  width: 350px;
-  margin-top: 1.6rem;
-  margin-left: 1.5rem;
-  box-shadow: 1px 1px 4px 1px rgba(105,105,105);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 2px 2px 1px #A9A9A9;
 
 }
 
-.skills .listSkills section ul li {
-  list-style: none;
-  margin-top: 1.2rem;
-  margin-bottom: 1.2rem;
-  margin-left: 1rem;
+.skills .listSkills main h3 {
+  color: #323256;
+  margin-top: 0.1rem;
+}
+
+.skills .listSkills main section {
+  margin-top: 0.7rem;
+}
+
+.skills .listSkills main section span {
+  color: #323256;
 }
 
 @media screen and (max-width: 700px) {
@@ -82,7 +94,7 @@ h1{
   }
 
   .description h1{
-    margin-right: 2.5rem;
+    margin-right: 1.5rem;
   }
 
   .title-description span {
@@ -95,15 +107,9 @@ h1{
     margin-left: 2rem;
   }
 
-  .skills .listSkills section ul li {
-    margin: 1.5rem 0.9rem 1rem;
-
-  }
-
   .skills .listSkills {
-    width: 350px;
-    height: 250px;
-    margin-top: 2rem;
-    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
   }
 }
