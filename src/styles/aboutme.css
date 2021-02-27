@@ -47,39 +47,57 @@ h1{
 }
 
 .skills hr {
-  width: 400px;
+  width: 900px;
 }
 
-.skills .listSkills {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2vh;
-  place-items: center;
+.listSkills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    grid-gap: 2vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-.skills .listSkills main {
-  margin-top: 2rem;
-  width: 200px;
-  background: white;
-  height: 200px;
+.listSkills .progress-bar {
+  margin-top: 2px;
+  position: relative;
+  width: 300px;
+  height: 3em;
+  background-color: #111;
+  border-radius: 1.5em;
+  color: white;
+}
+
+.progress-bar::before {
+  content: attr(data-label);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  box-shadow: 0px 2px 2px 1px #A9A9A9;
-
+  position: absolute;
+  left: .5em;
+  top: .5em;
+  bottom: .5em;
+  width: calc(var(--width, 0) * 1%);
+  min-width: 2rem;
+  max-width: calc(100% - 1em);
+  background-color:	#323256;
+  border-radius: 1em;
+  padding: 1em;
 }
 
-.skills .listSkills main h3 {
-  color: #323256;
-  margin-top: 0.1rem;
+.listSkills main {
+    background: white;
+    width: 400px;
+    height: 600px;
+    display: grid;
+    place-items: center;
+    box-shadow: 2px 2px 2px 2px #A9A9A9;
 }
 
-.skills .listSkills main section {
-  margin-top: 0.7rem;
-}
-
-.skills .listSkills main section span {
-  color: #323256;
+.listSkills main h3 {
+  font-size: 25px;
+  color: #111;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width: 700px) {
@@ -107,9 +125,8 @@ h1{
     margin-left: 2rem;
   }
 
-  .skills .listSkills {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
+  .listSkills {
+      display: flex;
+      flex-direction: column;
   }
 }
