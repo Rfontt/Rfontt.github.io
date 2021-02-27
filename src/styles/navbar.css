@@ -19,7 +19,6 @@
 }
 
 .nav-bar nav ul li {
-  list-style: none;
   margin-top: 1.3rem;
 }
 
@@ -29,7 +28,7 @@
 }
 
 .nav-bar nav ul li a{
-  font-size: clamp(1.75em, 0.5em + 1vw, 2.1em);
+  font-size: min(1.8em, 6vw);
   font-family: 'Zilla Slab', serif;
   color: white;
   cursor: pointer;
