@@ -87,7 +87,7 @@ h1{
 
 .listSkills main {
     background: white;
-    width: 400px;
+    width: 350px;
     height: 600px;
     display: grid;
     place-items: center;
@@ -128,5 +128,13 @@ h1{
   .listSkills {
       display: flex;
       flex-direction: column;
+  }
+
+  .listSkills main {
+      width: 300px;
+  }
+
+  .listSkills .progress-bar {
+    width: 250px;
   }
 }
