@@ -83,6 +83,29 @@ body {
 	padding: 9px;
 }
 
+.main main h2 {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: #323256;
+}
+
+.main main .technologies {
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	place-items: center;
+}
+
+.main main .technologies section span {
+	font-family: 'Roboto', sans-serif;
+	color: #323256;
+}
+
+.main main .technologies section ul li {
+	margin-top: 0.6rem;
+}
+
+
 @media screen and (max-width: 700px) {
 	.grid {
     display: flex;
@@ -92,10 +115,10 @@ body {
 
 	.main main {
 		width: 380px;
-		height: 500px;
+		height: 600px;
 	}
 
 	.main main .images img {
-		width: 200px;
+		width: 300px;
 	}
 }
