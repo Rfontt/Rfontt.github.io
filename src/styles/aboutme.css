@@ -126,8 +126,11 @@ h1{
   }
 
   .listSkills {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-items: center;
+      grid-gap: 1vh;
+      margin-top: 0.5rem;
   }
 
   .listSkills main {
