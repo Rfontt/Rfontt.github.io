@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+body {
+  background: #DCDCDC;
+}
+
+.container {
+  max-height: 100vh;
+  place-items: center;
+  display: grid;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media a i {
+  margin: 2rem;
+  font-size: 50px;
+}
+
+.social-media a #github {
+  color: #111;
+}
+
+.social-media a #instagram {
+  color: #9400D3;
+}
+
+.social-media a #facebook {
+  color: blue;
+}
+
+.social-media a #linkedin {
+  color: #00008B;
+}
+
+.main main {
+  background: white;
+  width: 500px;
+  height: 550px;
+  border-radius: 8px;
+}
+
+.main main h2 {
+  text-align: center;
+  padding: 8px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.main main .inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 5px;
+  outline: none;
+}
+
+.main main #name, #subject {
+  border: none;
+  box-shadow: 0px 1px 1px 0px gray;
+  margin-top: 2rem;
+  padding: 5px;
+  outline: none;
+}
+
+.main main #message {
+  margin-top: 2rem;
+  height: 150px;
+  padding: 6px;
+  outline: none;
+}
+
+.main main .buttonSubmit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main main .buttonSubmit button {
+  margin-top: 2rem;
+  background: green;
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.main main .buttonSubmit button:hover {
+  background: white;
+  color: black;
+  border: solid 1px black;
+}
+
+@media screen and (max-width: 700px) {
+  .grid {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .social-media a i {
+    margin: 2rem;
+    font-size: 30px;
+  }
+
+  .main main {
+    width: 400px;
+    height: 600px;
+  }
+
+  .main main h2 {
+    font-size: 20px;
+  }
+}
