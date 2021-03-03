@@ -53,6 +53,7 @@ body {
 
 .listProjects .projects main span {
 	font-size: 15px;
+	text-align: center;
 }
 
 .listProjects .projects main a {
