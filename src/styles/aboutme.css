@@ -50,13 +50,25 @@ h1{
   width: 900px;
 }
 
-.listSkills {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
-    grid-gap: 1vh;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.listSkills .listOne {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.listSkills .listTwo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.listSkills .listTree {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .listSkills article {
@@ -71,24 +83,24 @@ h1{
 .listSkills .html {
   background: orange;
   color: blue;
-  margin-left: 200px;
 }
 
 .listSkills .css {
   background: blue;
   color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
 }
 
 .listSkills .javascript {
   background: yellow;
   color: black;
-  margin-right: 200px;
 }
 
 .listSkills .typescript {
   background: #0065cd;
   color: white;
-  margin-left: 200px;
 }
 
 .listSkills .react, .react-native {
@@ -96,25 +108,28 @@ h1{
   color: white;
 }
 
-.listSkills .react-native {
-  margin-right: 200px;
+.listSkills .react {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
 }
 
 .listSkills .node {
   background: black;
   color: green;
-  margin-left: 200px;
 }
 
 .listSkills .mysql {
   background: #b100ac;
   color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
 }
 
 .listSkills .mongodb {
   background: #00b340;
   color: white;
-  margin-right: 200px;
 }
 
 @media screen and (max-width: 700px) {
