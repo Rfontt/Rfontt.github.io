@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+  background: #DCDCDC;
+}
+
+p {
+  text-align: center;
+  margin-top: 4px;
+  font-size: 13px;
+  font-family: 'Merriweather', serif;
+  color: #323256;
+}
+
+.container {
+  display: grid;
+  max-height: 100vh;
+}
+
+.navbar {
+	background: #323256;
+	height: 90px;
+}
+
+.navbar .ComeBack i {
+	margin-top: 0.7rem;
+	font-size: 30px;
+	margin-left: 0.8rem;
+	color: white;
+}
+
+.navbar nav {
+	display: grid;
+	place-items: center;
+}
+
+.navbar nav li {
+	font-size: 28px;
+	color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.listApi .apis{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: -23px;
+}
+
+.listApi .apis:hover {
+  margin-top: 20px;
+}
+
+.listApi section {
+  width: 210px;
+  height: 220px;
+  background: white;
+  margin-top: 200px;
+  margin: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.listApi section a {
+  font-size: 40px;
+  margin-top: 10px;
+  transition: transform 200ms;
+}
+
+.listApi section a:hover {
+	transform: scale(1.1);
+}
+
+.listApi section span {
+  margin-top: 2px;
+  font-family: 'Open Sans', sans-serif;
+  color: blue;
+}
+
+
+.listApi .apisTwo{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+	.grid {
+    display: flex;
+    width: 100%;
+  }
+}
