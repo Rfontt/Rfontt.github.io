@@ -1,9 +1,9 @@
 var xhr = new XMLHttpRequest();
 
 var document = {
-  "name": "Teste",
-	"subject": "Teste",
-	"message": "Teste"
+	"name": "Empres",
+ 	"subject": "Contratar",
+  "message": "Desejo contratar você."
 }
 
 xhr.onreadystatechange = function () {
@@ -12,8 +12,6 @@ xhr.onreadystatechange = function () {
   }
 }
 
-xhr.open("POST", "http://localhost:8080/information");
+xhr.open("POST", "http://localhost:8080/contact");
 
-xhr.send({"name": "Teste",
-"subject": "Teste",
-"message": "Teste"})
+xhr.send(document);
