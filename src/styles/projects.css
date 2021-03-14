@@ -25,6 +25,16 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 2vh;
 	margin-top: 2rem;
+	animation-name: projects;
+	animation-duration: 3s;
+}
+
+@keyframes projects {
+	from {
+		margin-left: 100%;
+		width: 100%;
+		background: #000;
+	}
 }
 
 .listProjects .projects main{

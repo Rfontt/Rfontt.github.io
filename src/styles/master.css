@@ -32,6 +32,20 @@
   font-family: 'Potta One', cursive;
   color: #323256;
   margin-top: 20px;
+  animation-name: name;
+  animation-duration: 3s;
+}
+
+@keyframes name {
+  from {
+    margin-top: 100%;
+    transform: rotate(0deg);
+    color: #000D26;
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .social-media {
